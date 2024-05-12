@@ -35,7 +35,7 @@
                     </tr>
                 @endforeach
                 <tr>
-                    <td colspan="6">Go to <a href="/index" class="btn btn-danger">Data</a> </td>
+                    <td colspan="6">Go to <a href="/" class="btn btn-danger">Data</a> </td>
                 </tr>
             </tbody>
         </table>

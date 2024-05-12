@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get("/index", [CompaniesController::class, "index"]);
+Route::get("/", [CompaniesController::class, "index"]);
 Route::get("/archive", [CompaniesController::class, "archive"]);
 Route::get("/restore/{id}", [CompaniesController::class, "restore"]);
 Route::get("/edit/{id}", [CompaniesController::class, "edit"]);
