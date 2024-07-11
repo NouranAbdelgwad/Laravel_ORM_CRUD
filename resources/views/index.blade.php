@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <h1>Laravel CRUD</h1>
+        <h1 class="text-center">Laravel CRUD</h1>
         {{-- @if ($success)
         <div class="alter alter-success">{{$success}}</div>
         @endif --}}
@@ -44,7 +44,7 @@
             </tbody>
         </table>
         <h2>Add Company</h2>
-        <form action="/index" class="form" method="POST">
+        <form action="/store" class="form" method="POST">
             @csrf
             <label class="form-label">Company Name</label>
             <input type="text" class="form-control" name="name">

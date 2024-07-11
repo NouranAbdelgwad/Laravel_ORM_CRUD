@@ -22,6 +22,6 @@ Route::get("/restore/{id}", [CompaniesController::class, "restore"]);
 Route::get("/edit/{id}", [CompaniesController::class, "edit"]);
 
 
-Route::post("/index", [CompaniesController::class, "store"]);
+Route::post("/store", [CompaniesController::class, "store"]);
 Route::delete("/delete/{id}", [CompaniesController::class, "destroy"]);
 Route::put("/edited/{id}", [CompaniesController::class, "update"]);

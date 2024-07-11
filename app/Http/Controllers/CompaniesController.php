@@ -28,7 +28,7 @@ class CompaniesController extends Controller
             "email"=>$request->email,
             "address"=>$request->address
         ]);
-        return redirect("index")->with("success", "Company has been added Successfully");
+        return redirect("/")->with("success", "Company has been added Successfully");
     }
 
     /**
@@ -49,7 +49,7 @@ class CompaniesController extends Controller
             "email"=>$request->email,
             "address"=>$request->address
         ]);
-        return redirect("index");
+        return redirect("/");
     }
 
     /**
@@ -59,7 +59,7 @@ class CompaniesController extends Controller
     {
         try{
             Company::findOrFail($id)->delete();
-            return redirect("index");
+            return redirect("/");
         }
         catch(Exception $e){
             return "Failed";
