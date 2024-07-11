@@ -1,2 +1,2 @@
-#CRUD using Laravel
+## CRUD using Laravel
 * with soft delete
